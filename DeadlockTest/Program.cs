@@ -37,7 +37,7 @@ namespace DeadlockTest
                         break;
 
                     default:
-                        Console.WriteLine("Try again!\n\n>> ");
+                        Console.Write("\nIt's a wrong key. Try again!\n\n>> ");
                         continue;
                 }
 
@@ -46,7 +46,7 @@ namespace DeadlockTest
 
             Thread.Sleep(500);
             Console.WriteLine("\nDone.");
-            Console.Read();
+            Console.ReadKey();
         }
     }
 }
